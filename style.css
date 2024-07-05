@@ -1,0 +1,174 @@
+:root {
+    --primary-color: #2F1893;
+    --secondary-color: #6D5DB3;
+    --light-primary-color: #1DA1F2;
+    --green-color: #26DAC5;
+    --purple-color: #1E0E62;
+    --pink-color: #E93A7D;
+    --light-color: #fff;
+    --gray-color: #EBEAED;
+    --gray-primary-color: #A1A1B0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout {
+    width: 100vw;
+    height: 100vh;
+    padding: 40px;
+    background-color: var(--primary-color);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav>h2 {
+    color: var(--light-color);
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+ul>li {
+    list-style: none;
+    color: var(--light-color);
+    font-size: 16px;
+}
+
+li:nth-child(1) {
+    color: var(--secondary-color);
+}
+
+li>button,
+.content-sec>button {
+    background-color: var(--pink-color);
+    border: 1px solid var(--pink-color);
+    color: var(--light-color);
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+section {
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding:0 40px;
+}
+
+.content-sec {
+    color: var(--light-color);
+    padding:50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-sec>h1 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.content-sec>p {
+    font-size: 20px;
+    margin-bottom: 30px !important;
+}
+
+.form {
+    background-color: var(--light-color);
+    width: 470px;
+    height: 600px;
+    border-radius: 8px;
+    padding:50px 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+form>h3 {
+    color: var(--purple-color);
+    font-size: 42px;
+    line-height: 52px;
+    letter-spacing: -0.4px;
+}
+
+form>input {
+    width: 330px;
+    height: 43px;
+    padding: 18px 10px;
+    border-radius: 15px;
+    border: 1px solid var(--gray-color);
+}
+
+.sign {
+    display: flex;
+    color: var(--gray-primary-color);
+}
+
+#checkbox-input {
+    accent-color: var(--green-color);
+    width: 3rem;
+}
+
+form>button {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--light-color);
+    width: 330px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+form>button:nth-of-type(2) {
+    background-color: var(--light-primary-color);
+    border: 1px solid var(--light-primary-color);
+}
+
+.line {
+    position: relative; 
+    display: inline-block;
+}
+
+.line::before {
+    content: " ";
+    border-top: 2px solid var(--gray-primary-color); 
+    position: absolute;
+    top: 50%;
+    left: -155px;
+    width: 130px;
+}
+
+.line::after {
+    content: " ";
+    border-top: 2px solid var(--gray-primary-color);
+    position: absolute;
+    top: 50%;
+    right: -155px;
+    width: 130px;
+}
+
+span{
+    color: var(--green-color);
+}
+
+#account-access{
+    color: var(--gray-primary-color);
+}
